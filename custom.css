@@ -1,0 +1,74 @@
+.center-everything {
+    text-align: center;
+}
+
+.big-text {
+    font-size: 24px;
+	line-height:30px;
+    margin: 25px;
+}
+
+body {
+    color: #333;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Liberation Sans", FreeSans, sans-serif;
+}
+
+div.header {
+    font-size: 1em;
+    margin: 10px 10px 20px 35px;
+    line-height: 12px;
+}
+
+.bullets ul {
+    font-size: 2em;
+}
+
+strong {
+    color: #000;
+}
+
+.content {
+    margin-top: 10px;
+}
+
+.content.subsection {
+    background: transparent;
+    color: #c80000;
+    font-size: 2.25em;
+}
+
+.content h1 {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0.5em 0 0.75em 0;
+}
+
+.content pre {
+    font-size: 2em;
+    font-family: monospace;
+}
+
+.content.master h1 {
+    font-size: 6em;
+    color: #000;
+}
+
+.content.chat blockquote p {
+    margin: 10px 0;
+    line-height: 120%;
+}
+
+.bullets ul {
+    text-align: justify;
+    margin-left: 20px;
+}
+
+.bullets ul li {
+    font-size: 20px;
+    padding: 15px; /*text-align:justify;*/
+
+}
+.code{
+    font-size: 1.5em;
+    margin-left:15px;
+}

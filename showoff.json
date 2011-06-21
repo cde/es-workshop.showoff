@@ -1,0 +1,9 @@
+{
+  "name": "RailsBridge Taller Rails en Espanol",
+  "description": "Slides y links",
+  "sections": [
+    {"section":"Bienvenido"},
+    {"section":"ruby_para_programadores"},
+    {"section":"mafalda"}
+  ]
+}
