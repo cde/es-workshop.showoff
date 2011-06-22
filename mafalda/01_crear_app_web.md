@@ -1,6 +1,7 @@
 !SLIDE subsection
 # Crear una Aplicación RoR Web
 
+
 !SLIDE bullets incremental transition=fade
 # Nuestra aplicacion web va a:
 * Crear, editar y/o eliminar tópicos

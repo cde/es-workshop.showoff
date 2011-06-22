@@ -1,9 +1,27 @@
-!SLIDE subsection
-# Votar en tópicos
+!SLIDE 
+#8) Caracteristica: Habilitar Votos en Tópicos 
+
+!SLIDE code
+	Siguiendo el Desarrollo Basado en Pruebas
+
+$ rake cucumber FEATURE=features/3_votes.feature
+
+!SLIDE bullets
+	language: es
+	Característica: Votos
+		Para determinar que discurso dar
+		Los usuarios deben votar por sus favoritos topicos.
+
+		Escenario: Viendo los votos
+	    	Cuando visito la página topicos
+	    	Entonces deberia ver  "0 votos"
+
+!SLIDE
+	Por el mensaje de error notaras que nos hace falta "votos"
 
 !SLIDE  bullets incremental transition=fade
 # Votos
-* Cada voto sera un objecto (tendra una fila en la base de datos)
+* Cada voto sera un objeto (tendra una fila en la base de datos)
 * Cuando alguien vote en un tópico, crearemos un nuevo objeto "voto" y lo guardaremos
 * Cada voto es asociado con un específico tópico.
 
@@ -16,7 +34,93 @@
 # Topico has_many :votos
 # Voto belongs_to :topicos
 
+!SLIDE  code 
+# Agregar votos
+
+	Necesitamos un modelo y un controlador
+
+$ rails generate resource voto topico_id:integer
+$ rake db:migrate
+
+!SLIDE   
+# Agregar las asociaciones
+
+	@@@ruby
+	../app/models/topico.rb
+	class Topico < ActiveRecord::Base
+	  has_many :votos
+	end
+
+	../app/models/voto.rb
+
+	class Voto < ActiveRecord::Base
+	   belongs_to :topico
+	end
+
+!SLIDE  title-slide center  bullets incremental
+![has_many](../public/images/asociaciones_rails.png)
+
+!SLIDE code
+#Juega en la consola
+
+$rails c
+
+ruby-1.9.2-head :001 > t = Topico.new(:titulo => "Mi Topico")
+ => #<Topico id: nil, titulo: "Mi Topico", descripcion: nil, created_at: nil, updated_at: nil> 
+ruby-1.9.2-head :002 > t.votos
+=> []
+ruby-1.9.2-head :004 > t.votos.build
+ => #<Voto id: nil, topico_id: nil, created_at: nil, updated_at: nil> 
+ruby-1.9.2-head :005 > t.votos
+ => [#<Voto id: nil, topico_id: nil, created_at: nil, updated_at: nil>] 
+ruby-1.9.2-head :006 > t.save
+ => true 
+ruby-1.9.2-head :007 > t.votos
+ => [#<Voto id: 5, topico_id: 4, created_at: "2011-05-04 11:24:47", updated_at: "2011-05-04 11:24:47">] 
 
 !SLIDE subsection
-# Asociaciones en Rails
+#Volvamos a la prueba 
 
+!SLIDE 
+	language: es
+	Característica: Votos
+		Para determinar que discurso dar
+		Los usuarios deben votar por sus favoritos topicos.
+
+		Escenario: Viendo los votos
+	    	Cuando visito la página topicos
+	    	Entonces deberia ver  "0 votos"
+
+!SLIDE code
+Utiliza el helper pluralize para agregar la cantidad de votos a tu vista
+	
+<%= pluralize(topico.votos.length, "voto") %>
+
+!SLIDE 
+#Permitir que los usuarios voten
+	* Con rake routes a explora las URLs de votos 
+	* Luego edita /app/views/topicos/index.html.erb
+	
+	<%= link_to '+1', votos_path(:topico_id => topico.id), 
+	:method => :post %>
+
+	* Y Crea la accion en el Controlador  	
+
+!SLIDE
+
+
+	@@@ruby
+	class VotosController < ApplicationController
+	   def create
+	    topico = Topico.find(params[:topico_id])
+	    voto   = topico.votos.build
+
+	    if voto.save
+	      flash[:notice] = 'El voto fue creado.'
+	    else
+	      flash[:notice] = 'Lo siento. No pudimos contar su voto.'
+	    end
+	    redirect_to(topicos_path)
+	  end
+	 end
+	
