@@ -1,7 +1,5 @@
 source :rubygems
-gemspec
-
-group :optional do
-  gem "rmagick"
-  gem "pdfkit"
-end
+gem 'bluecloth'
+gem 'nokogiri'
+gem 'showoff'
+gem 'gli'

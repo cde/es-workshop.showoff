@@ -1,1 +1,2 @@
-run Sinatra::Application
+require "showoff"
+run ShowOff.new

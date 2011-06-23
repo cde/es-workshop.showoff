@@ -1,6 +1,6 @@
 <!SLIDE title-slide center>
 # <img src="../public/images/railsbridge_logo.png"> #
-* Bienvenido al Taller Rails
+# Bienvenido al Taller Rails
 en Español!
 
 <!SLIDE bullets incremental transition=fade>
@@ -29,8 +29,8 @@ en Español!
 # Qué es Ruby on Rails?
 
 !SLIDE image center
-TODO: Hacer un nuevo gráfico
-<img src="../public/images/web-application.png">
+
+<img src="../public/images/web_app_in_rails.png">
 
 <!SLIDE subsection>
 # Lenguaje
