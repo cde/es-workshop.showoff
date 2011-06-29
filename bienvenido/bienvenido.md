@@ -1,7 +1,6 @@
 <!SLIDE title-slide center>
 # <img src="../public/images/railsbridge_logo.png"> #
-# Bienvenido al Taller Rails
-en Español!
+# Bienvenido al Taller Rails en Español!
 
 <!SLIDE bullets incremental transition=fade>
 .notes Que es un Taller Open Source? 
@@ -16,7 +15,7 @@ en Español!
 	
 # Materiales accesibles y grátis #
 * DevChix wiki, RailsBridge wiki
-* Slides: github, slidedown, showoff
+* Slides: github, showoff
 * Ver github.com/railsbridge
 * Tío Google
 
@@ -25,13 +24,12 @@ en Español!
 # Porqué estamos aquí?
 * Ruby on Rails!
 
-<!SLIDE bullets incremental transition=fade>
+<!SLIDE subsection>
 # Qué es Ruby on Rails?
 
-!SLIDE image center
-
-<img src="../public/images/web_app_in_rails.png">
-
+<!SLIDE image center>
+<img src="../public/images/web_app_in_rails.jpg">
+ 
 <!SLIDE subsection>
 # Lenguaje
 # <img src="../public/images/ruby-logo.jpg" width="250">
@@ -43,7 +41,7 @@ en Español!
 * Propósito General
 * Lenguaje natural
 
-!SLIDE
+!SLIDE subsection
 # Framework
 # <img src="../public/images/rails_logo.jpg">
 
@@ -109,8 +107,17 @@ en Español!
 
 <!SLIDE bullets transition=fade>
 ## El Proyecto de Hoy
-
-TODO poner el grafico
+<table>
+	<tr>
+		<td>
+			<img src="../public/images/mafalda.jpg"/>
+		</td>
+		<td style="text-aling">	
+A Mafalda le gusta hablar de la vida y tiene muchos topicos que compartir!!
+Nuestra mision es ayudar a Mafalda con una app donde podamos agregar topicos y votar en los topicos mas populares 
+</td>
+</tr>
+</table>
 
 <!SLIDE bullets transition=fade>
 # Agenda
