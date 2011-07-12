@@ -5,6 +5,10 @@
 !SLIDE subsection
 # Clases
 
+!SLIDE bullets incremental transition=fade
+* Define qué es un Objeto?
+* Define qué puede hacer el objeto?
+
 
 !SLIDE
 # Clases

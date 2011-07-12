@@ -21,7 +21,7 @@
 * Orientado a Objetos
 * Blocks / lambdas / closures
 * Parecido a Perl (expresiones regulares)
-* Conectado cercanamente al shell & OS
+* Conectado cercánamente al shell & OS
 
 !SLIDE subsection
 # IRB: Interactive RuBy

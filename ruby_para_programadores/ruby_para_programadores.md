@@ -76,7 +76,7 @@
 # Clases son objetos
 
 * class methods son realmente métodos de la clase "objeto"
-* codigo evaluado en el alcance de la definicion de una clase actua en la clase "objeto"
+* código evaluado en el alcance de la definición de una clase actua en la clase "objeto"
 
 <!SLIDE bullets incremental transition=fade>
 # Créditos

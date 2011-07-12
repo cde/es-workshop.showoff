@@ -3,7 +3,7 @@
 # Bienvenido al Taller Rails en Español!
 
 <!SLIDE bullets incremental transition=fade>
-.notes Que es un Taller Open Source? 
+.notes Qué es un Taller Open Source? 
 
 # Taller Código Libre (Open Source) #
 
@@ -30,8 +30,8 @@
 <!SLIDE image center>
 <img src="../public/images/web_app_in_rails.jpg">
  
-<!SLIDE subsection>
-# Lenguaje
+<!SLIDE >
+## Lenguaje
 # <img src="../public/images/ruby-logo.jpg" width="250">
 
 <!SLIDE bullets incremental transition=fade>
@@ -41,14 +41,14 @@
 * Propósito General
 * Lenguaje natural
 
-!SLIDE subsection
-# Framework
+!SLIDE 
+## Framework
 # <img src="../public/images/rails_logo.jpg">
 
 <!SLIDE bullets incremental transition=fade>
 ## Rails: Framework
 
-* Base de Datos agnostico
+* Base de Datos agnóstico
 * Escrito en Ruby
 
 <!SLIDE bullets incremental transition=fade>
@@ -62,8 +62,8 @@
 
 * De opinión fuerte
 * Convenciones sobre configuración
-* DRY (Don't Repeat Yourself). No te repitas => menos codigo significa, fácil de mantener y modificar. 
-* Test Driven Development (TDD). Desarrollo basado en Pruebas
+* DRY (Don't Repeat Yourself). No te repitas => menos código significa, fácil de mantener y modificar. 
+* Test Driven Development (TDD). Desarrollo Basado en Pruebas
 * Pruebas primero, implementación después
 * Mínimo código, máximo effecto
 
@@ -107,28 +107,31 @@
 
 <!SLIDE bullets transition=fade>
 ## El Proyecto de Hoy
-<table>
-	<tr>
-		<td>
-			<img src="../public/images/mafalda.jpg"/>
-		</td>
-		<td style="text-aling">	
-A Mafalda le gusta hablar de la vida y tiene muchos topicos que compartir!!
-Nuestra mision es ayudar a Mafalda con una app donde podamos agregar topicos y votar en los topicos mas populares 
-</td>
-</tr>
-</table>
+<div style="width:80%; height:150px; line-height:2;">
+	<div style="float:left; width:200px; margin-right:10px;">
+		<img src="../public/images/mafalda.jpg"/>
+	</div>
+	<div>
+		<p>Mafalda es una niña preocupada por la humanidad y la paz mundial 
+		<br/>
+		A Mafalda le gusta hablar de la vida y tiene muchos tópicos que compartir!!!
+		</p>
+		<p>
+		Nuestra misión es ayudar a Mafalda con una "app Web" donde ella pueda  agregar tópicos y sus amigos puedan votar en ellos. </p>
+	</div>
+</div>	
+
 
 <!SLIDE bullets transition=fade>
 # Agenda
 * 9:00-9:30 Registro, cafe
-* 9:30-10:00 Introduction
-* 10:00-10:50 Session 1
-* 11:00-12:00 Session 2
+* 9:30-10:00 Introducción
+* 10:00-10:50 Sección 1
+* 11:00-12:00 Sección 2
 * 12:00-1:00 Almuerzo
-* 1:00-2:15 Session 3
-* 2:30-3:30 Session 4
-* 3:30-4:00 Conclusion y preguntas
+* 1:00-2:15 Sección 3
+* 2:30-3:30 Sección 4
+* 3:30-4:00 Conclusión y preguntas
 * 5:00- 
 
 

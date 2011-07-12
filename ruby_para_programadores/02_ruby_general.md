@@ -14,7 +14,7 @@
 
 !SLIDE
 
-# Todo evalua a algo
+# Todo evalúa a algo
 
 !SLIDE
 
@@ -62,7 +62,7 @@
 
 !SLIDE
 
-# punto y coma (semicolons), parentesis y `return` son opcionales
+# punto y coma (semicolons), parentesis y returnos (return) son opcionales
 
 <div class="big-text"> Estas definiciones son equivalentes: </div>
 
@@ -80,11 +80,11 @@
 !SLIDE
 
     @@@ ruby
-    >> "Hello".gsub 'H', 'h'
-    => "hello"
+    >> "Hola".gsub 'H', 'h'
+    => "hola"
 
-    >> "Hello".gsub("H", "h").reverse
-    => "olleh"
+    >> "Hola".gsub("H", "h").reverse
+    => "aloh"
 
 
     

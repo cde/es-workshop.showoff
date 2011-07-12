@@ -3,26 +3,26 @@
 # Strings
 
 !SLIDE
-## interpolation
+## Interpolation
 
     @@@ ruby
     "boyz #{1 + 1} men"
     => "boyz 2 men"
 
-<div class="big-text">Cualquier codigo en ruby que va entre las {} se evalua aunque este entre un string</div>
+<div class="big-text">Cualquier código en ruby que va entre las {} se evalúa aunque este entre un string</div>
 
 !SLIDE
-#String ...
+#Interpolation ...
 
     @@@ ruby
-    >> a = "world"
-    >> puts "hello #{a}"
-    hello world
+    >> a = "mundo"
+    >> puts "hola #{a}"
+    hola mundo
 
     >> a = 2
-    >> puts "hello #{a}"
-    hello 2
+    >> puts "hola #{a}"
+    hola 2
 
     >> a = nil
-    >> puts "hello #{a} there"
-    hello  there
+    >> puts "hola #{a} que tal?"
+    hello  que tal?

@@ -5,7 +5,7 @@
 !SLIDE
 
     @@@ ruby
-    my_array = ["cat", "dog", ”world"]
+    my_array = ["cat", "dog", "world"]
     my_array.each do |item|
       puts "hello " + item
     end

@@ -3,7 +3,7 @@
 
 !SLIDE bullets incremental
 # Arreglos (Array)
-* Dinamicamente ajustable (longitud, tamano del array)
+* Dinámicamente ajustable (longitud, tamano del array)
 * Contiene diferentes tipos de datos
 * Indice empieza en cero
 * Puede ser definido literalmente (en linea). Ej.
