@@ -3,7 +3,7 @@
 # Más interesantes puntos sobre ruby
 
 !SLIDE image center
-<img src="../public/images/duck_typing.jpg" width="250">
+<img src="/images/duck_typing.jpg" width="250">
 !SLIDE bullets incremental transition=fade
 # duck typing
 

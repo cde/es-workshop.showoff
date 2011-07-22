@@ -104,7 +104,8 @@
 }
 .bullets ul li {
     text-align: center;
-    padding: 25px;
+/*    padding: 25px;*/
+	padding: 15px; /*text-align:justify;*/
 }
 
 .smbullets ul {
@@ -140,8 +141,8 @@
 }
 
 .subsection {
-    background: #008;
-    color: #fff;
+/*    background: #008;*/
+/*    color: #fff;*/
 }
 
 .small {
@@ -151,8 +152,9 @@
 .smaller {
     font-size: 70%;
 }
-
-h1 { font-size: 5em; font-weight: normal; text-align: center;}
+/*We can use it for  all the folders*/
+/*h1 { font-size: 5em; font-weight: normal; text-align: center;}*/
+h1 { font-size: 3.5em; font-weight: normal; text-align: center;}
 h2 { font-size: 3em; font-weight: normal; text-align: center; }
 h3 { font-size: 2em; font-weight: normal; text-align: center; }
 

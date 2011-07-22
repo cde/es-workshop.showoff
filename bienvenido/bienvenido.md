@@ -1,19 +1,17 @@
 <!SLIDE title-slide center>
-# <img src="../public/images/railsbridge_logo.png"> #
-# Bienvenido al Taller Rails en Español!
+# <img src="/images/railsbridge_logo.png">
+## Bienvenido al Taller Ruby on Rails en Español!
 
 <!SLIDE bullets incremental transition=fade>
-.notes Qué es un Taller Open Source? 
-
-# Taller Código Libre (Open Source) #
+# Taller Código Libre (Open Source)
 
 * Es un proyecto de la Comunidad!
 * Muchos individuos
-* Rails Bridge, Dev Chix
+* Rails Bridge, DevChix
 
 <!SLIDE bullets incremental transition=fade>
 	
-# Materiales accesibles y grátis #
+# Materiales accesibles y grátis
 * DevChix wiki, RailsBridge wiki
 * Slides: github, showoff
 * Ver github.com/railsbridge
@@ -28,11 +26,11 @@
 # Qué es Ruby on Rails?
 
 <!SLIDE image center>
-<img src="../public/images/web_app_in_rails.jpg">
+<img src="/images/web_app_in_rails.jpg">
  
 <!SLIDE >
-## Lenguaje
-# <img src="../public/images/ruby-logo.jpg" width="250">
+#Lenguaje
+# <img src="/images/ruby-logo.jpg" width="250">
 
 <!SLIDE bullets incremental transition=fade>
 ## Ruby: Lenguaje de Programación
@@ -42,8 +40,8 @@
 * Lenguaje natural
 
 !SLIDE 
-## Framework
-# <img src="../public/images/rails_logo.jpg">
+# Framework
+# <img src="/images/rails_logo.jpg">
 
 <!SLIDE bullets incremental transition=fade>
 ## Rails: Framework
@@ -62,17 +60,19 @@
 
 * De opinión fuerte
 * Convenciones sobre configuración
-* DRY (Don't Repeat Yourself). No te repitas => menos código significa, fácil de mantener y modificar. 
+* DRY (Don't Repeat Yourself). 
+** No te repitas => menos código significa, fácil de mantener y modificar. 
 * Test Driven Development (TDD). Desarrollo Basado en Pruebas
 * Pruebas primero, implementación después
 * Mínimo código, máximo effecto
 
 <!SLIDE image center transition=fade>
-<div style="margin-bottom:25px; font-size:18px;"> Basado en el Patron MVC Modelo Vista Controlador </div>
-<img src="../public/images/mvc_es.png">
+Basado en el Patron MVC Modelo Vista Controlador
+
+<img src="/images/mvc_es.png">
 
 <!SLIDE image center>
-<img src="../public/images/agilmanifiesto.png"/>
+<img src="/images/agilmanifiesto.png"/>
 
 !SLIDE bullets incremental transition=fade
 # Prácticas Agiles
@@ -90,7 +90,7 @@
 
 * Pregunta!
 
-<!SLIDE bullets transition=fade>
+<!SLIDE transition=fade>
 # Herramientas que utilizaremos 
 * **rails**
 * **cucumber**: BDD Herramienta para realizar las pruebas
@@ -103,15 +103,16 @@
 <!SLIDE bullets>
 ## Materiales
 * slides: http://railsbridge.github.com/workshop
-* http://wiki.devchix.com/index.php?title=Rails_3_Curriculum
+* http://www.wiki.devchix.com/index.php?title=Workshop_in_Spanish
 
 <!SLIDE bullets transition=fade>
 ## El Proyecto de Hoy
-<div style="width:80%; height:150px; line-height:2;">
-	<div style="float:left; width:200px; margin-right:10px;">
-		<img src="../public/images/mafalda.jpg"/>
+<div style="width:100%; height:150px; line-height:2;">
+	<div style="float:left; width:22%;">
+
+		<img src="/images/mafalda-discurso.png"/>
 	</div>
-	<div>
+	<div style="float:right;  width:77%; font-size:20px; padding: 60px 10px 0 0;">
 		<p>Mafalda es una niña preocupada por la humanidad y la paz mundial 
 		<br/>
 		A Mafalda le gusta hablar de la vida y tiene muchos tópicos que compartir!!!
@@ -132,6 +133,7 @@
 * 1:00-2:15 Sección 3
 * 2:30-3:30 Sección 4
 * 3:30-4:00 Conclusión y preguntas
-* 5:00- 
+* 5:00- Party!
+
 
 

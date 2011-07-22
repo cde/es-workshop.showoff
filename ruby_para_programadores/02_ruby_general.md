@@ -54,17 +54,17 @@
     # comentario
     2 + 2 # aqui va otro comentario
 
-!SLIDE
+!SLIDE bullets incremental transition=fade
 
-# Ruby está inspirado para ser elegante y fácil de leer
+# Ruby está inspirado para ser elegante y fácil de leer 
+* asi que puntuaciones y burocracias son mínimos.
 
-# asi que puntuaciones y burocracias son mínimos.
-
-!SLIDE
+!SLIDE bullets incremental transition=fade
 
 # punto y coma (semicolons), parentesis y returnos (return) son opcionales
 
-<div class="big-text"> Estas definiciones son equivalentes: </div>
+!SLIDE
+### Estas definiciones son equivalentes:
 
     @@@ ruby
     def inc x

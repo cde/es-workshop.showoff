@@ -61,7 +61,7 @@
 !SLIDE bullets incremental transition=fade
 # Tópicos
 * El tópico va a estar compuesto de título y descripción
-* Tendremos acciones de CRUD. (Acronimo de Crear, Obtener, Actualizar y Borrar por sus siglas en inglés)
+* Tendremos acciones de CRUD. (Acrónimo de Crear, Obtener, Actualizar y Borrar por sus siglas en inglés)
 
 * Create: crear un nuevo tópico
 * Read: Leer tópicos
@@ -71,13 +71,12 @@
 
 !SLIDE transition=fade
 # Implementando  MVC con scaffold
-    @@@ ruby
-    $ rails generate scaffold topico titulo:string descripcion:text
-    $ rake db:migrate
+  
+	$ rails generate scaffold topico titulo:string descripcion:text
+	$ rake db:migrate
 
 !SLIDE transition=fade
 #  Ver pasar la prueba
-    @@@ ruby
     $ rake cucumber FEATURE=features/1_topicos.feature
 
 !SLIDE commandline
@@ -90,7 +89,8 @@
         create db/migrate/20110503202056_create_topicos.rb
         create app/models/topico.rb
 
-    Las Vistas necesarias incluyendo el subdirectorio por el modelo tópico.
+    Las Vistas necesarias incluyendo el subdirectorio por 
+	el modelo tópico.
 
         create app/views/topicos
         create app/views/topicos/index.html.erb
@@ -98,16 +98,18 @@
         create app/views/topicos/show.html.erb
         create app/views/topicos/new.html.erb
         create app/views/topicos/_form.html.erb
-
+!SLIDE incremental transition=fade
+#...Que acabamos de hacer? (cont)
     El Controlador
         create app/controllers/topicos_controller.rb
-    Rutas
+    
+	Rutas
         config/routes.rb
             Mafalda::Application.routes.draw do
                 resources :topicos
 
 !SLIDE  title-slide center transition=fade
-![Architectura](../public/images/mvc_es.png)
+![Architectura](/images/mvc_es.png)
 
 <!SLIDE >
 # Modelo-Vista-Controlador
@@ -123,14 +125,14 @@
         * ActionController
 
 
-!SLIDE commandline code transition=fade
+!SLIDE transition=fade
 
 #4) Mi sitio a la vista de todos
-$ git init
-....
-$ git add .
-$ git commit -m "Aplicación web básica, incluyendo el modelo topico"
-$ git push origin master
+	$ git init
+	....
+	$ git add .
+	$ git commit -m "Aplicación web básica, incluyendo el modelo topico"
+	$ git push origin master
 
 <a href = "http://www.wiki.devchix.com/index.php?title=User_talk:Carmen#Puesta_a_la_Vista_del_Mundo" target="_blank">Explicaciones / Instrucciones</a>
 
@@ -155,7 +157,7 @@ $ git push origin master
 !SLIDE   bullets incremental transition=fade
 # 5) Rutas / Mapeos
 * REST las URLs representan recursos y no acciones
-* "Topico" es un recurso
+* "Tópico" es un recurso
 
 
 <!SLIDE code >
@@ -182,14 +184,14 @@ edit_topico GET    /topicos/:id/edit(.:format) {:action=>"edit", :controller=>"t
 !SLIDE code
 #Re-mapeo
 
-Mafalda::Application.routes.draw do
-   resources :topicos
-   ...
-   root :to => 'topicos#index'
- end
+	Mafalda::Application.routes.draw do
+	   resources :topicos
+	   ...
+	   root :to => 'topicos#index'
+	 end
 
 
-$ git rm public/index.html
+	$ git rm public/index.html
 
 !SLIDE  bullets incremental transition=fade
 # Repite los pasos del Desarrollo basado en Pruebas:
@@ -215,12 +217,13 @@ $ git rm public/index.html
 		Entonces debo ver "Rails Fixtures"
 		Y debo estar en inicio
 		
-!SLIDE bullets transition=scrollLeft
-	Abre app/controllers/topicos_controller.rb
-	Fíjate en las acciones new y create.
-	En la acción create hay un re-ruteo a un único tópico,	
-		
-			format.html { redirect_to(@topic) } 
+<!-- !SLIDE bullets transition=scrollLeft -->
+<!SLIDE transition=fade>
+* Abre app/controllers/topicos_controller.rb
+* Fíjate en las acciones new y create.
+* En la acción create hay un re-ruteo a un único tópico:	
+	format.html { redirect_to(@topic) } 
+
 !SLIDE 	
 	Deseamos que el re-ruteo sea a la pagina de inicio 
 	(lista de topicos)
@@ -274,9 +277,8 @@ Genial!
 * Utiliza el método "link_to"
  
 * En app/views/topics/index.html.erb determina los cambios para hacer pasar tus pruebas 
-!SLIDE code
-# Checkpoint!!!! Commit frecuentemente 
-	
-$ git add .
-$ git commit -m "Titulos son links"
+!SLIDE
+## Checkpoint!!!! Commit frecuentemente 	
+	$ git add .
+	$ git commit -m "Titulos son links"
 	

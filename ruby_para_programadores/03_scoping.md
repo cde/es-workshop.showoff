@@ -1,6 +1,7 @@
-!SLIDE  bullets
+!SLIDE  subsection
 # Variables
 
+!SLIDE
 # Las variables son implícitas y declaradas
 
     @@@ ruby

@@ -1,0 +1,21 @@
+h1{
+ font-size: 3.25em;	
+}
+
+.content > ul{
+	font-size: 2em;
+}
+.bullets ul {
+    text-align: justify;
+    margin-left: 20px;
+}
+
+.bullets ul li {
+    padding: 15px; /*text-align:justify;*/
+
+}
+
+.subsection h1 {
+    background:  #8B0000;
+    color: #fff;	
+}

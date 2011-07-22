@@ -1,5 +1,5 @@
 <!SLIDE image center transition=fade>
-<img src="img/ruby-logo.jpg" width="250">
+<img src="/images/ruby-logo.jpg" width="250">
 ## Introducción a Ruby para Programadores
 
 <!SLIDE bullets incremental transition=fade>
@@ -13,7 +13,8 @@
 
 <!SLIDE image center bullets incremental transition=fade>
 # Ruby es un Lenguaje
-<img src="img/ruby-logo.jpg" height="125" width="125">
+<img src="/images/ruby-logo.jpg" width="125"  height="125"  >
+
 <ul>
 <li> Interpretado y Orientado a Objetos</li>
 <li> Aplicable a muchos dominios</li>

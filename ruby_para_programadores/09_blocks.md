@@ -6,7 +6,7 @@
 
 * Metodos pueden tomar argumentos en el block
 * Usa  `do...end` o `{...}` al final de la lista de argumentos
-* Dentro del metodo, llama el block con 'yield'
+* Dentro del método, llama el block con 'yield'
 
 !SLIDE
 
