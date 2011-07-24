@@ -157,4 +157,5 @@ Esta vez ejecuta el suite completo.
 </pre>
 Veras que todas las pruebas han pasado!!!
 
+!SLIDE commandline incremental
 

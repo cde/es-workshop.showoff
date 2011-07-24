@@ -78,7 +78,7 @@
     def inc(x); x + 1; end
 
 !SLIDE
-
+# Executable Ruby #
     @@@ ruby
     >> "Hola".gsub 'H', 'h'
     => "hola"

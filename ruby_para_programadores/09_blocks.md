@@ -4,7 +4,7 @@
 !SLIDE bullets incremental
 # Block
 
-* Metodos pueden tomar argumentos en el block
+* Métodos pueden tomar argumentos en el block
 * Usa  `do...end` o `{...}` al final de la lista de argumentos
 * Dentro del método, llama el block con 'yield'
 
@@ -28,10 +28,10 @@
       puts "hi"
     end
 
-!SLIDE incremental
+!SLIDE bullets incremental
 
-# Blocks pueden también tomar parámetros y retornar un valor
-# El iterador "map" translada cada elemento en un array
+* Blocks pueden también tomar parámetros y retornar un valor
+* El iterador "map" translada cada elemento en un array
 
 !SLIDE
 

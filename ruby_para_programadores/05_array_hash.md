@@ -22,6 +22,12 @@
     a.pop #=> "four"
     a[0] #=> 1
 
+!SLIDE execute
+
+# Executable Ruby #
+
+	@@@ ruby
+	result = [1, 2, 3].map { |n| n*7 }
 
 !SLIDE subsection
 # Hash
