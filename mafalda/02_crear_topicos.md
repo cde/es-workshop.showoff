@@ -5,9 +5,9 @@
 * ( Rspec, TestUnit, Cucumber o una combinación de ellas).
 * En el workshop estamos utilizado "Cucumber".
 
-!SLIDE bullets incremental transition=fade
+!SLIDE commandline incremental transition=fade
 # Observa las pruebas que hemos escritos de antemano para ganar tiempo
-        $  ls -la features/
+	ls -la features/
 
 !SLIDE subsection
 # Desarrollo basado en Pruebas
@@ -41,11 +41,10 @@
 * repasar los pasos.
 
 
-!SLIDE transition=fade
+!SLIDE commandline incremental 
 # Observemos fallar la prueba
 
-    @@@ ruby
-    $ rake cucumber FEATURE=features/1_topicos.feature
+	rake cucumber FEATURE=features/1_topicos.feature
 
 !SLIDE transition=fade
 # Los escenarios en cucumber son pruebas & documentación a la vez.
@@ -58,6 +57,9 @@
 !SLIDE subsection 
 # Tópicos
 
+!SLIDE  title-slide center transition=fade
+![TOPICO](/images/topico.png)
+
 !SLIDE bullets incremental transition=fade
 # Tópicos
 * El tópico va a estar compuesto de título y descripción
@@ -69,18 +71,19 @@
 * Delete: Borrar los tópicos del sistema
 
 
-!SLIDE transition=fade
+!SLIDE commandline incremental transition=fade
 # Implementando  MVC con scaffold
   
-	$ rails generate scaffold topico titulo:string descripcion:text
-	$ rake db:migrate
+	rails generate scaffold topico titulo:string descripcion:text
+	
+	rake db:migrate
 
-!SLIDE transition=fade
+!SLIDE commandline incremental transition=fade
 #  Ver pasar la prueba
-    $ rake cucumber FEATURE=features/1_topicos.feature
+	rake cucumber FEATURE=features/1_topicos.feature
 
-!SLIDE commandline
-    $ rails server
+!SLIDE commandline incremental
+    rails server
     http://localhost:3000/topicos
 
 !SLIDE incremental transition=fade
@@ -125,17 +128,21 @@
         * ActionController
 
 
-!SLIDE transition=fade
-
+<!SLIDE bullets transition=fade>
 #4) Mi sitio a la vista de todos
-	$ git init
-	....
-	$ git add .
-	$ git commit -m "Aplicación web básica, incluyendo el modelo topico"
-	$ git push origin master
+* Commit tus cambios en tu repositorio local y remoto
+* Deploy en Heroku
 
+<div style="margin-left:20px;">
 <a href = "http://www.wiki.devchix.com/index.php?title=User_talk:Carmen#Puesta_a_la_Vista_del_Mundo" target="_blank">Explicaciones / Instrucciones</a>
+</div>
 
+!SLIDE commandline incremental transition=fade
+	git init
+	....
+	git add .
+	git commit -m "Aplicación web básica, incluyendo el modelo topico"
+	git push origin master
 
 !SLIDE transition=fade
 # Commit en una fase temprana & frecuentemente 
@@ -148,7 +155,7 @@
         http://mi-mafalda.heroku.com/ | git@heroku.com:mi-mafalda.git
         Git remote heroku added
 
-!SLIDE commandline code
+!SLIDE commandline incremental
 
     $ git push heroku master
     $ heroku rake db:migrate
@@ -181,7 +188,7 @@ edit_topico GET    /topicos/:id/edit(.:format) {:action=>"edit", :controller=>"t
      => "http://www.example.com/topicos"
     ruby-1.9.2-head :003 >
 
-!SLIDE code
+!SLIDE
 #Re-mapeo
 
 	Mafalda::Application.routes.draw do
@@ -205,6 +212,7 @@ edit_topico GET    /topicos/:id/edit(.:format) {:action=>"edit", :controller=>"t
 	* Ejecutemos el segundo escenario.
 	* Observa el fallo.
 
+!SLIDE  commandline incremental
 	$rake cucumber FEATURE=features/1_topicos.feature:11:18
 
 !SLIDE transition=fade
@@ -217,12 +225,13 @@ edit_topico GET    /topicos/:id/edit(.:format) {:action=>"edit", :controller=>"t
 		Entonces debo ver "Rails Fixtures"
 		Y debo estar en inicio
 		
-<!-- !SLIDE bullets transition=scrollLeft -->
-<!SLIDE transition=fade>
+
+<!SLIDE bullets incremental transition=fade>
+
 * Abre app/controllers/topicos_controller.rb
 * Fíjate en las acciones new y create.
-* En la acción create hay un re-ruteo a un único tópico:	
-	format.html { redirect_to(@topic) } 
+* En la acción create hay un re-ruteo a un único tópico:
+format.html { redirect_to(@topic) } 
 
 !SLIDE 	
 	Deseamos que el re-ruteo sea a la pagina de inicio 
@@ -243,19 +252,19 @@ edit_topico GET    /topicos/:id/edit(.:format) {:action=>"edit", :controller=>"t
 	Redirecciona la ruta
 		format.html { redirect_to(root_path) }
 	
-!SLIDE
+!SLIDE 
 	Corre de vuelta la prueba
 	
 	$rake cucumber FEATURE=features/1_topicos.feature
+
 	
 <pre style="color:green">
-
 Genial!
 2 scenarios (2 passed)
 10 steps (10 passed)
 </pre>	
 
-!SLIDE  bullets incremental transition=fade
+!SLIDE  transition=fade
 # 7) Característica: Topicos y Detalles
 
 	* Ejecutemos el segundo feature.
@@ -273,12 +282,11 @@ Genial!
   
   
 !SLIDE   bullets incremental transition=fade
-
 * Utiliza el método "link_to"
- 
 * En app/views/topics/index.html.erb determina los cambios para hacer pasar tus pruebas 
-!SLIDE
+
+!SLIDE commandline incremental
 ## Checkpoint!!!! Commit frecuentemente 	
-	$ git add .
-	$ git commit -m "Titulos son links"
+	git add .
+	git commit -m "Titulos son links"
 	

@@ -1,9 +1,2 @@
-{
-  "name": "RailsBridge Taller Rails en Espanol",
-  "description": "Slides y links",
-  "sections": [
-    {"section":"Bienvenido"},
-    {"section":"ruby_para_programadores"},
-    {"section":"mafalda"}
-  ]
-}
+{ "name": "RailsBride Outreach Spanish Speakers", "sections": [ 	{"section":"introduccion_ruby", "name": "Ruby para programadores"},
+				{"section":"mafalda"}]}

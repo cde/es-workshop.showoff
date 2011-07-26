@@ -1,10 +1,9 @@
 !SLIDE 
 #8) Caracteristica: Habilitar Votos en Tópicos 
 
-!SLIDE
-Siguiendo el Desarrollo Basado en Pruebas
-
-	$ rake cucumber FEATURE=features/3_votos.feature
+!SLIDE commandline incremental
+### Siguiendo el Desarrollo Basado en Pruebas
+	rake cucumber FEATURE=features/3_votos.feature
 
 !SLIDE
 	language: es
@@ -19,7 +18,7 @@ Siguiendo el Desarrollo Basado en Pruebas
 !SLIDE
 	Por el mensaje de error notaras que nos hace falta "votos"
 
-!SLIDE transition=fade
+!SLIDE bullets incremental transition=fade
 # Votos
 * Cada voto sera un objeto (tendra una fila en la base de datos)
 * Cuando alguien vote en un tópico, crearemos un nuevo objeto "voto" y lo guardaremos
@@ -34,13 +33,11 @@ Siguiendo el Desarrollo Basado en Pruebas
 # Topico has_many :votos
 # Voto belongs_to :topicos
 
-!SLIDE 
-# Agregar votos
+!SLIDE commandline incremental 
+### Agregar votos: Necesitamos un modelo y un controlador
 
-Necesitamos un modelo y un controlador
-
-	$ rails generate resource voto topico_id:integer
-	$ rake db:migrate
+	rails generate resource voto topico_id:integer
+	rake db:migrate
 
 !SLIDE   
 # Agregar las asociaciones
@@ -90,24 +87,24 @@ Necesitamos un modelo y un controlador
 	    	Cuando visito la página topicos
 	    	Entonces deberia ver  "0 votos"
 
-!SLIDE
-Ejecuta de nuevo la prueba y te encontraras con otro tipo de error. 
+!SLIDE commandline incremental
+### Ejecuta de nuevo la prueba y te encontraras con otro tipo de error. 
 
 	$ rake cucumber FEATURE=features/3_votos.feature
 
-!SLIDE
-Utiliza el helper pluralize para agregar la cantidad de votos a tu vista
-	
-<%= pluralize(topico.votos.length, "voto") %>
+!SLIDE  
+	Utiliza el helper pluralize para agregar la cantidad de votos a tu vista
+	<%= pluralize(topico.votos.length, "voto") %>
 
-<!SLIDE >
-#Permitir que los usuarios voten
-* Con rake routes a explora las URLs de votos 
-* Luego edita /app/views/topicos/index.html.erb y agrega el siguiente helper method:
+<!SLIDE bullets incremental>
+## Permitir que los usuarios voten
+* Con "rake routes" explora las URLs de votos 
+* Luego edita "/app/views/topicos/index.html.erb" y agrega el siguiente helper method:
 
-<div style="font-size:22px; color:black; margin-left:100px; color:red;">	
-	&#60;%= link_to '+1', votos_path(:topico_id => topico.id), :method => :post %&#62;
-</div>
+<pre style="font-size:22px; color:black; margin-left:100px; color:red;">	
+	&#60;%= link_to '+1', votos_path(:topico_id => topico.id), 
+	:method => :post %&#62;
+</pre>
 * Y Crea la accion en el Controlador  	
 
 !SLIDE
@@ -131,7 +128,7 @@ Utiliza el helper pluralize para agregar la cantidad de votos a tu vista
 #Volvamos a la prueba ... 
 
 !SLIDE
-Esta vez ejecuta el suite completo.
+### Esta vez ejecuta el suite completo.
 <pre style="font-size:1.7em; margin-left:0">	
 	$ rake cucumber
 	/Users/carmen/.rvm/rubies/ruby-1.9.2-p180/bin/ruby -S bundle exec cucumber  --profile default
@@ -155,7 +152,20 @@ Esta vez ejecuta el suite completo.
 23 steps (23 passed)
 0m1.217s
 </pre>
-Veras que todas las pruebas han pasado!!!
+!SLIDE
+# Veras que todas las pruebas han pasado!!!
+
 
 !SLIDE commandline incremental
-
+## Checkpoint!!!! Commit frecuentemente y deploy 	
+	git add .
+	git commit -m "Votos habilitados"
+	git push origin master
+	......
+	git push heroku master
+	...
+	
+!SLIDE 
+# Chequea tu nueva aplicación RoR
+### http://mi-mafalda.heroku.com/	
+	

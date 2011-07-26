@@ -18,7 +18,7 @@
 </div>
 
 !SLIDE bullets incremental transition=fade
-# Nuestra aplicacion web va a:
+# Nuestra aplicación web va a:
 * Crear, editar y/o eliminar tópicos
 * Tener la habilidad de votar los tópicos.
 <!SLIDE title-slide center>
@@ -26,11 +26,11 @@
 
 
 !SLIDE bullets incremental transition=fade
-#Tambien vamos a explorar otros conceptos!
+#También vamos a explorar otros conceptos!
 * Desarrollo basado en pruebas (TDD - Test Driven Development)
 * Git
 * Heroku
-
+* Bundle (manejador de gemas)
 
 !SLIDE subsection
 # Empecemos!
@@ -38,8 +38,9 @@
 
 # 1) Creamos nuestra aplicación RoR:
 
-    @@@ ruby
-    curl -O https://gist.github.com/955119.txt
-    $ rails new mafalda -Tm 955119.txt
+!SLIDE commandline incremental
+	curl -O curl -O https://raw.github.com/gist/1103302/../taller-setup.txt
+	
+    rails new mafalda -Tm taller-setup.txt
 
 
