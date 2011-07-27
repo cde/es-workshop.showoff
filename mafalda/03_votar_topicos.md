@@ -104,7 +104,7 @@
 	    if voto.save
 	      flash[:notice] = 'El voto fue creado.'
 	    else
-	      flash[:notice] = 'Lo siento. No pudimos contar su voto.'
+	      flash[:error] = 'Lo siento. No pudimos contar su voto.'
 	    end
 	    redirect_to(topicos_path)
 	  end
@@ -146,12 +146,11 @@
 ## Checkpoint!!!! Commit frecuentemente y deploy 	
 	git add .
 	git commit -m "Votos habilitados"
-	git push origin master
 	......
 	git push heroku master
 	...
 	
 !SLIDE 
 # Chequea tu nueva aplicación RoR
-### http://mi-mafalda.heroku.com/	
+### http://<tu_nombre_generado>.heroku.com/	
 	
