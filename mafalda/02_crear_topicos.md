@@ -274,7 +274,7 @@ Genial!
 	
 
 !SLIDE  bullets incremental transition=fade
-# Modulo ActionView::Helpers::UrlHelpers
+# Helpers
 * Conjunto de métodos para establecer vínculos y obtener las direcciones URL (a href tags) 
 
 * Rails proporciona una variedad de metodos que pueden ser utilizados en las Vistas
