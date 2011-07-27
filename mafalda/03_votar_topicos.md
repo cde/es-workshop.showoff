@@ -17,6 +17,7 @@
 
 !SLIDE
 	Por el mensaje de error notaras que nos hace falta "votos"
+	Y ademas tenemos que modificar la vista.
 
 !SLIDE bullets incremental transition=fade
 # Votos
@@ -75,22 +76,7 @@
 	 => [#<Voto id: 5, topico_id: 4, created_at: "2011-05-04 11:24:47", updated_at: "2011-05-04 11:24:47">] 
 
 !SLIDE subsection
-#Volvamos a la prueba 
-
-!SLIDE 
-	language: es
-	Característica: Votos
-		Para determinar que discurso dar
-		Los usuarios deben votar por sus favoritos topicos.
-
-		Escenario: Viendo los votos
-	    	Cuando visito la página topicos
-	    	Entonces deberia ver  "0 votos"
-
-!SLIDE commandline incremental
-### Ejecuta de nuevo la prueba y te encontraras con otro tipo de error. 
-
-	$ rake cucumber FEATURE=features/3_votos.feature
+#Volvamos a corregir la prueba 
 
 !SLIDE  
 	Utiliza el helper pluralize para agregar la cantidad de votos a tu vista
