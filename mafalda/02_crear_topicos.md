@@ -142,7 +142,7 @@
 	....
 	git add .
 	git commit -m "Aplicación web básica, incluyendo el modelo topico"
-	git push origin master
+
 
 !SLIDE transition=fade
 # Commit en una fase temprana & frecuentemente 
@@ -150,7 +150,7 @@
 
 
 !SLIDE commandline
-    carmen(mafalda)(master)$heroku create mi-mafalda
+    carmen(mafalda)(master)$heroku create 
         Creating mi-mafalda... done, stack is bamboo-mri-1.9.2
         http://mi-mafalda.heroku.com/ | git@heroku.com:mi-mafalda.git
         Git remote heroku added
