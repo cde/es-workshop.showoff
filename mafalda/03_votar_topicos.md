@@ -29,16 +29,18 @@
 # Asociaciones en Rails
 
 !SLIDE  title-slide center  bullets incremental
-![has_many](/images/asociaciones_rails.png)
+![has_many](/images/asociaciones_en_mafalda.png)
 
-# Topico has_many :votos
-# Voto belongs_to :topicos
 
 !SLIDE commandline incremental 
 ### Agregar votos: Necesitamos un modelo y un controlador
 
 	rails generate resource voto topico_id:integer
 	rake db:migrate
+
+!SLIDE
+# Topico has_many :votos
+# Voto belongs_to :topicos
 
 !SLIDE   
 # Agregar las asociaciones
@@ -55,11 +57,11 @@
 	   belongs_to :topico
 	end
 
-!SLIDE  title-slide center  bullets incremental
-![has_many](/images/asociaciones_rails.png)
+<!-- !SLIDE  title-slide center  bullets incremental
+![has_many](/images/asociaciones_rails.png) -->
 
-!SLIDE command
-#Juega en la consola
+!SLIDE command 
+#Para entender mejor juega en la consola
 	$rails c
 
 	ruby-1.9.2-head :001 > t = Topico.new(:titulo => "Mi Topico")
@@ -76,23 +78,44 @@
 	 => [#<Voto id: 5, topico_id: 4, created_at: "2011-05-04 11:24:47", updated_at: "2011-05-04 11:24:47">] 
 
 !SLIDE subsection
-#Volvamos a corregir la prueba 
+#Hagamos pasar la prueba! 
 
 !SLIDE  
+## Primero indiquemos la cantidad de votos 
 	Utiliza el helper pluralize para agregar la cantidad de votos a tu vista
 	<%= pluralize(topico.votos.length, "voto") %>
 
-<!SLIDE bullets incremental>
-## Permitir que los usuarios voten
-* Con "rake routes" explora las URLs de votos 
+<!SLIDE bullets >
+## Luego un acceso para que los usuarios voten
+* Con "rake routes | grep votos" explora las URLs de votos 
 * Luego edita "/app/views/topicos/index.html.erb" y agrega el siguiente helper method:
 
 <pre style="font-size:22px; color:black; margin-left:100px; color:red;">	
 	&#60;%= link_to '+1', votos_path(:topico_id => topico.id), 
 	:method => :post %&#62;
 </pre>
-* Y Crea la accion en el Controlador  	
 
+* Observa el argumento :metodo => :post
+
+!SLIDE
+## Por último, tenemos que agregar la misma lógica que probamos en la consola 
+### Fijate de nuevo en las rutas de votos.
+
+<!SLIDE code >
+    $ rake routes | grep votos
+<div >
+    votos GET    /votos(.:format)            {:action=>"index", :controller=>"votos"}
+	      POST   /votos(.:format)            {:action=>"create", :controller=>"votos"}
+	.........
+
+	<span>
+	Fijate en la segundo expresión de "votos/"
+	Nos está indicando que el verbo "POST" corresponde a la acción "create" del controlador "votos"
+	</span
+</div>
+	
+!SLIDE
+## Abre el controller topicos y agrega el siguiente código	
 !SLIDE
 
 	@@@ruby
