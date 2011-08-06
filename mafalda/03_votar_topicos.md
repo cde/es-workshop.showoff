@@ -35,7 +35,11 @@
 !SLIDE commandline incremental 
 ### Agregar votos: Necesitamos un modelo y un controlador
 
-	rails generate resource voto topico_id:integer
+	rails generate resource voto topico_id:integer 
+
+!SLIDE commandline incremental 
+### Creamos la tabla votos en la BD, a través del migrate
+
 	rake db:migrate
 
 !SLIDE

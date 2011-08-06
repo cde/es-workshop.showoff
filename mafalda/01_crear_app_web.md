@@ -38,8 +38,10 @@
 
 # 1) Creamos nuestra aplicación RoR:
 
-!SLIDE commandline incremental
-	curl -O curl -O https://raw.github.com/gist/1103302/../taller-setup.txt
+!SLIDE 
+	curl -O \
+	https://raw.github.com/gist/1108601/eaa7979edf6ba2\
+	e93880f6925a62498ae9b8ac8d/taller_setup.txt
 	
     rails new mafalda -Tm taller-setup.txt
 

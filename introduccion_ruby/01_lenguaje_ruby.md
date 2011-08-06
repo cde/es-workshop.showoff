@@ -57,6 +57,20 @@
 
 ## RVM es una herramienta que nos permite instalar, manejar y trabajar con diferentes versiones de ruby, desde interpretes a gemas.
 
+!SLIDE
+## Confirmemos la version de ruby. 
+
+	rvm info
+	.....
+	ruby:
+    	interpreter: "ruby"
+    	version:     "1.9.2p290"
+ 	....
+	homes:
+	    gem:         "/Users/carmen/.rvm/gems/ruby-1.9.2-head@global"
+	    ruby:        "/Users/carmen/.rvm/rubies/ruby-1.9.2-head"
+	 
+	 
 !SLIDE subsection
 # IRB: Interactive RuBy
 

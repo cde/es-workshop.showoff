@@ -151,9 +151,12 @@
 
 !SLIDE commandline
     carmen(mafalda)(master)$heroku create 
-        Creating mi-mafalda... done, stack is bamboo-mri-1.9.2
-        http://mi-mafalda.heroku.com/ | git@heroku.com:mi-mafalda.git
+        Creating afternoon-water-081... done, stack is bamboo-mri-1.9.2
+        http://afternoon-water-081.heroku.com/ | git@heroku.com:afternoon-water-081.git
         Git remote heroku added
+
+	Nota: afternoon-water-081 es el nombre creado por heroku, 
+	distinto x cada usuario  
 
 !SLIDE commandline incremental
 
