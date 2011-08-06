@@ -146,8 +146,11 @@
 
 !SLIDE transition=fade
 # Commit en una fase temprana & frecuentemente 
-# Pon a producción "regularmente”
 
+
+<!SLIDE image center transition=fade>
+# Pon a producción "regularmente”
+<img src="/images/proceso_desarrollo.png" >
 
 !SLIDE commandline
     carmen(mafalda)(master)$heroku create 
