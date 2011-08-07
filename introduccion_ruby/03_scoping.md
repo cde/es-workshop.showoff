@@ -38,3 +38,4 @@
 * Arrays
 * Hashes
 * Strings
+* FixNum

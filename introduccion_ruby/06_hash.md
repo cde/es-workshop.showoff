@@ -20,7 +20,7 @@
 ### Puede ser definido "literalmente" (en linea)
 
     @@@ ruby
-    letras_frutas => {"A" => "anana",
+    letras_frutas = {"A" => "anana",
     "B" => "banana", "C" => "coco"}
 
 

@@ -46,8 +46,9 @@
 	=> 2156181200 	 
 
 !SLIDE
-### Etiquetas (labels) en un hash
-	@@@ruby
-	persona => {:nombre => "Carmen" :nickname => "póra"}
+## Etiquetas (labels) en un hash
+### Un poco más adelante verás con detalle el hash.
 
+	@@@ruby
+	persona = {:nombre => "Carmen" :nickname => "póra"}
 
